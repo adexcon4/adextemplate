@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  padding: 20px;
+  background: lightgrey;
+  
+  display: grid;
+  grid-template-columns:2fr 5fr 1fr 2fr;
+  grid-template-rows: 3fr 1fr 10fr 2fr;
+  grid-template-areas:
+    ". header header ."
+    ". nav nav ."
+    ". main aside ."
+    ". footer aside .";
+}
+
+header {
+  grid-area: header;
+  background-color: blue;
+  padding: 20px;
+}
+
+nav{
+
+  grid-area: nav;
+  background-color: aquamarine;
+  padding: 20px;
+}
+
+aside{
+  grid-area: aside;
+  background-color: sandywhite;
+  padding: 20px;
+}
+
+main{
+  grid-area: main;
+  background-color: yellow;
+  padding: 20px;
+}
+
+footer{
+  grid-area: footer;
+  background-color:orange;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+  <header>
+    <h1>Header</h1>
+  </header> 
+  <nav>
+    <h2>Nav</h2>
+  </nav> 
+  <aside>
+    <h2>Sidebar<h2>
+  </aside>  
+  <main>
+    <p>Main</p>
+  </main>  
+  <footer>
+    <p>Footer</p>
+  </footer>
+</body>
+</html>
